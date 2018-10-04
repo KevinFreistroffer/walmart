@@ -1,0 +1,43 @@
+.promo-code {
+	padding: 1rem 0;
+}
+
+.promo-code h1 {
+	cursor: pointer; 
+	text-decoration: underline;
+}
+
+.promo-code-group {
+	display: none;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.promo-code-group label {
+	text-align: left; 
+}
+
+.promo-code-group input {
+	padding: 0.5rem 1rem;
+	margin-right: 0.5rem;
+	border: 0.1rem solid #eee;
+	border-radius: 0.5rem;
+	box-shadow: none;
+}
+
+.promo-code-group button {
+	padding: 0.5rem 1rem;
+	color: #000;
+	background-color: #fff;
+	border: 0.1rem solid #000;
+	border-radius: 1rem;
+	align-self: flex-end;
+}
+
+.show-promo-code {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+

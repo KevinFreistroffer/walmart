@@ -1,0 +1,70 @@
+.pricing {
+
+}
+
+.pricing div {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pricing-line {
+	display: block;
+	width: 100%;
+	padding: 0.4rem 0.5rem;
+	text-align: left;
+	line-height: 1.25rem;
+}
+
+.pricing div span {
+	font-weight: bold;
+}
+
+.pricing--pickup-savings {
+	cursor: pointer;
+}
+
+.pricing--pickup-savings .label {
+	font-weight: 100;
+}
+
+
+.pricing--pickup-savings span {
+	color: red; 
+}
+
+
+.pricing--pickup-savings span.label {
+	color: black;
+	text-decoration: underline;
+}
+
+.pricing--total {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.show-savings-modal {
+	display: block !important;
+}
+
+.pickup-savings {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.pricing--taxes-fees {
+	border-bottom: 0.1rem solid #eee;
+}
+
+.pricing--taxes-fees span.based-on-zipcode {
+	display: inline;
+	text-decoration: underline;
+	font-weight: 100;
+}
+
+.pricing--taxes-fees span.label {
+	font-weight: 100;
+}

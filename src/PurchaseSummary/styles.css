@@ -1,0 +1,18 @@
+.purchase-summary {
+	width: 20rem;
+	padding: 1rem;
+	margin: 2rem auto;
+	border: 1px solid #ccc;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0 0.2rem 0.2rem #bbb;
+	border-radius: 0 0 1rem 1rem;
+}
+
+.purchase-summary {
+
+}
+
+.item-border-bottom {
+	border-bottom: 0.1rem solid #eee;
+}

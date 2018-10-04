@@ -1,0 +1,49 @@
+.item-details {
+	padding: 1rem 0;
+	position: relative;
+	width: 100%;
+}
+
+.item-details h1 {
+	margin: 1rem auto;
+	text-decoration: underline;
+}
+
+.item {
+	display: none;
+}
+
+.item--image {
+	width: 30%;
+}
+
+.item--details {
+	width: 70%;
+	text-align: left
+}
+
+.toggle-item-details {
+	cursor: pointer;
+}
+
+
+
+.show-item-details {
+	display: flex !important;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.details {
+	display: none;
+	overflow: hidden;
+	width: 90%;
+	margin: 1rem auto;
+	background-color: #ddd;
+}
+
+.description { 
+	font-size: 1rem;
+	line-height: 1rem;
+}

@@ -1,0 +1,9 @@
+.pickup-savings-modal {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.show-pickup-savings-modal {
+	display: block !important;
+}
