@@ -20,8 +20,8 @@ import * as styles from './styles.css';
 				type: 'ESS-3085 Racing',
 				style: 'Style Leather',
 				description: 'Gaming Chair, red',
-				price: 29.99,
-				salePrice: 19.99,
+				price: 10.05,
+				salePrice: 5.00,
 				quantity: '1',
 				imagePath: 'chair.jpeg',
 				promoCode: 'DISCOUNT'
@@ -75,7 +75,6 @@ import * as styles from './styles.css';
 		// Calculate how much is saved based on sale price
 		if ( salePrice !== 0 && salePrice <= price ) {
 			savingsAmount = parseFloat(price - salePrice).toFixed(2);
-			console.log(savingsAmount);
 		}	
 
 		return(

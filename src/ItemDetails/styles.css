@@ -19,7 +19,24 @@
 
 .item--details {
 	width: 70%;
-	text-align: left
+	text-align: left;
+	line-height: 1.5rem;
+}
+
+.item--price-quantity {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item--price {
+	font-weight: bold;
+}
+
+.item--slashed-price {
+	color: #999;
+	text-decoration: line-through;
 }
 
 .toggle-item-details {

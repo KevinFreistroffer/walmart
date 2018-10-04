@@ -13,9 +13,9 @@ const Pricing = (props) => {
 	let price = 0;	
 	let pickupSavings;
 	let savingsAmount = 0;
+	let savingsHasDecimals;
 
-	// If savings value ... then the item is on sale
-	if ( props.pickupSavings > 0 ) {
+	if (props.pickupSavings) {
 		pickupSavings = (
 			<div className="pricing-line pricing--pickup-savings">
 				<span className="label">Pickup Savings</span> 
@@ -24,11 +24,12 @@ const Pricing = (props) => {
 		); 
 	}
 
-	taxesAndFees = (props.price * taxRate).toFixed(2);
-	taxesAndFees = parseInt(taxesAndFees);
 
-	total = ( props.price + taxesAndFees ) - props.pickupSavings;
-	console.log(props.price, taxesAndFees);	
+	taxesAndFees = (props.price * taxRate).toFixed(2);
+	taxesAndFees = new Number(parseFloat(taxesAndFees).toFixed(2));
+	savingsAmount = new Number(parseFloat(props.pickupSavings).toFixed(2));
+	total = parseFloat(( props.price + taxesAndFees ) - savingsAmount ).toFixed(2);
+	taxesAndFees = parseFloat(taxesAndFees).toFixed(2);
 
 	return(
 		<div className="pricing" styles={styles}>
@@ -41,7 +42,7 @@ const Pricing = (props) => {
 				</span> 
 				<span>${taxesAndFees}</span>
 			</div>
-			<div className="pricing-line pricing--total">Est. Total <span>{total}</span></div>			
+			<div className="pricing-line pricing--total">Est. Total <span>${total}</span></div>			
 		</div>
 	);
 	

@@ -7,10 +7,18 @@ let showItemDetails = false;
 const ItemDetails = (props) => {
 
 	let toggleIcon;
+	let slashedPrice;
 	let currentPrice = 0;
 
 	toggleIcon = props.showItemDetails ? <span className="toggle-plus-minus">+</span> : <span>-</span>;
-	currentPrice = props.salePrice !== 0 ? props.salePrice : 0;
+
+	if (props.salePrice !== 0 && props.salePrice <= props.price) {
+		currentPrice = props.salePrice;
+		slashedPrice = <div className="item--slashed-price">{props.price}</div>
+	} else {
+		currentPrice = props.price;
+	}
+
 	
 	return(
 		<div className="item-details item-border-bottom" styles={styles}>
@@ -23,10 +31,11 @@ const ItemDetails = (props) => {
 				<div className="item--details">
 					<div className="item--name">{props.name}</div>
 					<div className="item--description">{props.description}</div> 
-					<div className="flex-row-center">
-						<div className="item--price">{currentPrice}</div>			
-						<div className="item--quantity">{props.quantity}</div>
-					</div>		
+					<div className="item--price-quantity">
+						<div className="item--price">${currentPrice}</div>			
+						<div className="item--quantity">Qty: {props.quantity}</div>
+					</div>	
+					{slashedPrice}	
 				</div>
 			</div>
 		</div>
