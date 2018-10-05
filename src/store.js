@@ -6,23 +6,27 @@ import itemReducers from './itemReducers';
 
 
 const rootReducer = combineReducers({
-	priceReducers,
 	itemReducers
 });
 
 const initialState = {
-	priceReducers: {
-		subTotal: 0,
-		pickupSavings: 0,
-		taxesAndFees: 0,
-		estimatedTotal: 0
-	},
+	// priceReducers: {
+	// 	promoCode: '',
+	// 	discountAmount: 0,
+	// 	validPromoCode: false
+	// },
 	itemReducers: {
 		name: '',
+		type: '',
+		style: '',
 		description: '',
-		price: '',
-		quantity: 0,
-		price: 0
+		price: 0,
+		salePrice: 0,
+		quantity: '',
+		imagePath: '',
+		promoCode: '',
+		discountAmount: .0,
+		validPromoCode: false
 	}
 }
 

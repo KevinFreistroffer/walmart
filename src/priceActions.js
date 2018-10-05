@@ -1,18 +1,21 @@
 import {
-	SET_PRICE,
-	GET_PRICE
+	APPLY_PROMO_CODE
 } from './types';
 
 
-export const setPrice = price => {
-	return {
-		type: SET_PRICE,
-		payload: price
-	}
-};
+export const applyPromoCode = (isValid, discountAmount) => {
 
-export const getPrice = price => {
+	if ( isValid ) {
+		// take the price/sale price multiple by discount %
+		// return new price value
+	}
+
+
 	return {
-		type: GET_PRICE
+		type: APPLY_PROMO_CODE,
+		payload: {
+			discountAmount,
+			validPromoCode: isValid
+		}
 	}
 };

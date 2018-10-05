@@ -24,6 +24,7 @@
 
 .pricing--pickup-savings {
 	cursor: pointer;
+	position: relative;
 }
 
 .pricing--pickup-savings .label {

@@ -1,5 +1,2 @@
-export const SET_PRICE = "SET_PRICE";
-export const GET_PRICE = "GET_PRICE";
-
-export const SET_NAME = "SET_NAME";
-export const SET_DESCRIPTION = "SET_DESCRIPTION";
+export const APPLY_PROMO_CODE = "APPLY_PROMO_CODE";
+export const SET_CART_ITEM = "SET_CART_ITEM";

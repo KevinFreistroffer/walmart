@@ -30,6 +30,8 @@ const ItemDetails = (props) => {
 				{ /* TODO come up with a different name, because it is similarly used as the component class name? */}
 				<div className="item--details">
 					<div className="item--name">{props.name}</div>
+					<div className="item--type">{props.type}</div>
+					<div className="item--style">{props.style}</div> 
 					<div className="item--description">{props.description}</div> 
 					<div className="item--price-quantity">
 						<div className="item--price">${currentPrice}</div>			

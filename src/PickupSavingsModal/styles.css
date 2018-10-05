@@ -1,7 +1,14 @@
 .pickup-savings-modal {
+	display: none !important; /* TODO shouldn't have to use !important. Something wrong with props etc. */	
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 3rem;
+	right: 3rem;
+	padding: 1rem;
+	border: 0.1rem solid #555;
+	box-shadow: 0.1rem 0.1rem 0.2rem #444;
+	border-radius: 0.2rem;
+	z-index: 9999;
+	background-color: #fff;
 }
 
 .show-pickup-savings-modal {
